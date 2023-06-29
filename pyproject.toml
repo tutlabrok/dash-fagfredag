@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dash-fagfredag"
+version = "0.1.0"
+description = ""
+authors = ["Eivind Hovdegård Furdal <eivind.h.furdal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dash = "^2.11.0"
+pandas = "^2.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+mypy = "^1.4.1"
+
+[tool.mypy]
+strict = true
+allow_untyped_decorators = true
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
